@@ -3,9 +3,16 @@ This project aims to classify high-resolution images by ultilizing deep convolut
 
 ** Prerequisits: Matconvnet 1.0-beta19 or later. Before test the codes, Matcovnet should be included into the system path.
 
-## Step.1: Generate image patch-based traning dataset using "generate_dataset.m"
-In this step, 10% of available samples were selected to train CNN models. 
-
+## Step.1: Use "generate_dataset.m" to generate traning samples
+In this step, 20% of available samples were selected to train CNN models. 
+The structure of generated training samples in this demo (Vai_imdb.mat):
+-imdb
+--images
+---data(image patches)
+---labels
+---set(training or validation)
+---mean_data
+--metadata
 
 
 ## Step.2: Train a 5-layer CNN with "vai_train_rs_cnn.m"
