@@ -1,7 +1,7 @@
-% load RGB image and gt data
+% load Original image and the corresponding ground-truth data
 
-load experiments\Vaihingen\gt_half_half.mat;
-load experiments\Vaihingen\image_half_half.mat;
+load gt_half_half.mat;
+load image_half_half.mat;
 im = image_half_half;
 gt = gt_half_half;
 % Select all samples
