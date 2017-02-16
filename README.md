@@ -1,1 +1,2 @@
-# Per-Pixel CNN high-resolution imagery classification
+# Per-Pixel CNN (PCNN) for high-resolution imagery classification
+
