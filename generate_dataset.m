@@ -1,7 +1,7 @@
 % load Original image and the corresponding ground-truth data
 
-load gt_half_half.mat;
-load image_half_half.mat;
+load data\gt_half_half.mat;
+load data\image_half_half.mat;
 im = image_half_half;
 gt = gt_half_half;
 % Select all samples
