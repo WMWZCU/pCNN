@@ -18,7 +18,7 @@ The structure of generated training samples in this demo (Vai_imdb.mat):<br />
 ## Step.2: Train a 5-layer CNN with "vai_train_rs_cnn.m"
 Due to the sizes of training samples, we deployed a 5-layer CNN (18(Con_3)-16(Pool/2)-8(Con_3)-6(Pool/2)-3(Con_3)-1). The feature number of each convultional layer was set to 20. The training and validation errors should be drop down to around 0.2 (i.e. around 80% accuracy). Of course, you can change the CNN configuration parameters accordingly. The training process should be something like this:<br />
 
-<img src=“https://github.com/WMWZCU/pCNN/blob/master/data/vai_cnn.png“ width = "400" height = "300" alt="CNN training" align=center />
+![image](https://github.com/WMWZCU/pCNN/blob/master/data/vai_cnn.png =400x200)
 
 
 
