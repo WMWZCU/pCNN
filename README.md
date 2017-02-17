@@ -4,7 +4,7 @@ This project is a prototype of our work, if you have some specific concerns, ple
 
 * Prerequisits: Matconvnet 1.0-beta19 or later. Before test the codes, Matcovnet should be included into the system path.
 
-## Step.1: Use "generate_dataset.m" to generate traning samples
+## Step.1: Use "generate_dataset.m" to generate training samples
 In this step, 20% of available samples were selected to train CNN models. Each labeled pixel corresponding to a square image patch (e.g., 18\*18\*3 in this demo).
 The structure of generated training samples in this demo (Vai_imdb.mat):<br />
 -imdb.mat<br />
@@ -14,7 +14,7 @@ The structure of generated training samples in this demo (Vai_imdb.mat):<br />
 --- set(training or validation)<br />
 --- mean_data<br />
 -- metadata<br />
-
+P.S. The process of generating dataset could be slow in this version, be patient :) 
 
 ## Step.2: Train a 5-layer CNN with "vai_train_rs_cnn.m"
 Due to the sizes of training samples, we deployed a 5-layer CNN (18(Con_3)-16(Pool/2)-8(Con_3)-6(Pool/2)-3(Con_3)-1). The feature number of each convultional layer was set to 20. The training and validation errors should be drop down to around 0.2 (i.e. around 80% accuracy). Of course, you can change the CNN configuration parameters accordingly. The training process should be something like this:<br />
