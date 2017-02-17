@@ -1,10 +1,10 @@
 % load Original image and the corresponding ground-truth data
 
-load data/gt_half_half.mat;
-load data/image_half_half.mat;
+load data/gt_half_half.mat; % load the original image
+load data/image_half_half.mat; % load the reference map
 im = image_half_half;
 gt = gt_half_half;
-% Select all samples
+% Begain to generate samples
 temp_blob=[];
 temp_label = [];
 set = [];
@@ -49,7 +49,7 @@ imdb.images.set = set ;
 imdb.images.data_mean = dataMean;
 imdb.meta.sets = {'train', 'val', 'test'} ;
 imdb.meta.classes = arrayfun(@(x)sprintf('%d',x),1:size(unique(gt),1),'uniformoutput',false) ;
-save('Vaihingen\Van_imdb.mat', '-struct', 'imdb') ;
+save('Van_imdb.mat', '-struct', 'imdb') ;
 
 % Then run train_rs_cnn.m 
 % Then predict whole image labels by using label_predict.m
