@@ -23,3 +23,5 @@ Due to the sizes of training samples, we deployed a 5-layer CNN (18(Con_3)-16(Po
 
 
 ## Step.3: Predict the whole map's labels with the well-trained CNN
+
+![image](https://github.com/WMWZCU/pCNN/blob/master/data/CNN_classify.png)
