@@ -1,5 +1,6 @@
 # Per-Pixel CNN (PCNN) for high-resolution imagery classification
-This project aims to classify high-resolution images by ultilizing deep convolutional neural networks. If you find this to be helpful, please cite our paper ["Spectral–spatial feature extraction for hyperspectral image classification: A dimension reduction and deep learning approach,IEEE Transactions on Geoscience and Remote Sensing 54 (8), 4544-4554"](http://ieeexplore.ieee.org/abstract/document/7450160/). Thanks!
+This project aims to classify high-resolution images by ultilizing deep convolutional neural networks. If you find this to be helpful, please cite our paper ["Spectral–spatial feature extraction for hyperspectral image classification: A dimension reduction and deep learning approach,IEEE Transactions on Geoscience and Remote Sensing 54 (8), 4544-4554"](http://ieeexplore.ieee.org/abstract/document/7450160/). Thanks! <br />
+This project is the prototype of our work, if you have some specific aims, please feel free to contact: w.zhao@pku.edu.cn
 
 * Prerequisits: Matconvnet 1.0-beta19 or later. Before test the codes, Matcovnet should be included into the system path.
 
@@ -22,6 +23,7 @@ Due to the sizes of training samples, we deployed a 5-layer CNN (18(Con_3)-16(Po
 
 
 
-## Step.3: Predict the whole map's labels with the well-trained CNN
+## Step.3: Predict the whole map's labels with "interface_predict.m"
+The well-trained CNN model generated from step 2 is used in this step. Be aware, change the last layer of well-trained CNN into "softmax". Then input the original map to perform prediction. The classified image should be something like this:<br />
 
 <img src="https://github.com/WMWZCU/pCNN/blob/master/data/CNN_classify.png" alt="Results" width="600" height="400">
