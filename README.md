@@ -4,9 +4,9 @@ This project aims to classify high-resolution images by ultilizing deep convolut
 * Prerequisits: Matconvnet 1.0-beta19 or later. Before test the codes, Matcovnet should be included into the system path.
 
 ## Step.1: Use "generate_dataset.m" to generate traning samples
-In this step, 20% of available samples were selected to train CNN models. Each labeled pixel corresponding to a square image patch (e.g., 18*18*3 in this demo).
+In this step, 20% of available samples were selected to train CNN models. Each labeled pixel corresponding to a square image patch (e.g., :math:`18\times18\times3` in this demo).
 The structure of generated training samples in this demo (Vai_imdb.mat):<br />
-- imdb<br />
+-imdb.mat<br />
 -- images<br />
 --- data(image patches)<br />
 --- labels<br />
