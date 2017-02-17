@@ -43,6 +43,7 @@ for i = 1:size(unique(gt),1)
     idx_tr =  randint(1,num_tr,[1,size(temp_x,1)]);
     temp_set(idx_tr) = 1;
     set = cat(2,set,temp_set);
+    fprintf('Already %f of total samples were generated',i/size(unique(gt),1));
 end
 data = single(reshape(temp_blob',18,18,3,[]));
 dataMean = single(mean(data(:,:,:,:), 4));
