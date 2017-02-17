@@ -19,11 +19,11 @@ The structure of generated training samples in this demo (Vai_imdb.mat):<br />
 ## Step.2: Train a 5-layer CNN with "vai_train_rs_cnn.m"
 Due to the sizes of training samples, we deployed a 5-layer CNN (18(Con_3)-16(Pool/2)-8(Con_3)-6(Pool/2)-3(Con_3)-1). The feature number of each convultional layer was set to 20. The training and validation errors should be drop down to around 0.2 (i.e. around 80% accuracy). Of course, you can change the CNN configuration parameters accordingly. The training process should be something like this:<br />
 
-<img src="https://github.com/WMWZCU/pCNN/blob/master/data/vai_cnn.png" alt="Training" width="600" height="360">
+<img src="https://github.com/WMWZCU/pCNN/blob/master/data/vai_cnn.png" alt="Training" width="600" height="410">
 
 
 
 ## Step.3: Predict the whole map's labels with "interface_predict.m"
 The well-trained CNN model generated from step 2 is used in this step. Be aware, change the last layer of well-trained CNN into "softmax". Then input the original map to perform prediction. The classified image should be something like this:<br />
 
-<img src="https://github.com/WMWZCU/pCNN/blob/master/data/CNN_classify.png" alt="Results" width="600" height="400">
+<img src="https://github.com/WMWZCU/pCNN/blob/master/data/CNN_classify.png" alt="Results" width="600" height="430">
