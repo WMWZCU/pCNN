@@ -1,5 +1,4 @@
 % load Original image and the corresponding ground-truth data
-
 load data/gt_half_half.mat; % load the original image
 load data/image_half_half.mat; % load the reference map
 im = image_half_half;
@@ -32,7 +31,7 @@ for i = 1:size(unique(gt),1)
             count = count+1;
     end   
     temp_set = ones(1,size(temp_x,1));
-    % number of validation samples
+    % number of validation samples or training samples
     num_val = fix(0.8*size(temp_x,1));
     idx =  randint(1,num_val,[1,size(temp_x,1)]);
     temp_set(idx) = 3;
