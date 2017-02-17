@@ -1,6 +1,6 @@
 # Per-Pixel CNN (PCNN) for high-resolution imagery classification
 This project aims to classify high-resolution images by ultilizing deep convolutional neural networks. If you find this to be helpful, please cite our paper ["Spectral–spatial feature extraction for hyperspectral image classification: A dimension reduction and deep learning approach,IEEE Transactions on Geoscience and Remote Sensing 54 (8), 4544-4554"](http://ieeexplore.ieee.org/abstract/document/7450160/). Thanks! <br />
-This project is the prototype of our work, if you have some specific aims, please feel free to contact: w.zhao@pku.edu.cn
+This project is a prototype of our work, if you have some specific concerns, please feel free to contact: w.zhao@pku.edu.cn
 
 * Prerequisits: Matconvnet 1.0-beta19 or later. Before test the codes, Matcovnet should be included into the system path.
 
