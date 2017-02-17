@@ -12,14 +12,10 @@ opts.train = struct() ;
 opts = vl_argparse(opts, varargin) ;
 if ~isfield(opts.train, 'gpus'), opts.train.gpus = []; end;
 
-net.meta.classes.name = arrayfun(@(x)sprintf('%d',x),1:6,'UniformOutput',false) ;
-
 %Prepare data and net
 net = vai_cnn_rs_init('batchNormalization', opts.batchNormalization, ...
                      'networkType', opts.networkType) ;
- load('code\experiments\Vaihingen\van_imdb.mat') ;
-meta1 = load('code\experiments\Vaihingen\meta.mat');
-imdb.meta.classes = meta1.meta.classes;
+load('van_imdb.mat') ;
 
 [net, info] = cnn_train(net, imdb, getBatch(opts), ...
   'expDir', opts.expDir, ...
